@@ -1855,7 +1855,7 @@ try {
             if ($deploymentMode -eq "Online") {
                 # If this is an online deployment, pull down the PowerShell scripts from GitHub
                 foreach ($script in $scriptArray) {
-                    $scriptBaseURI = "https://raw.githubusercontent.com/mattmcspirit/azurestack/$branch/deployment/powershell"
+                    $scriptBaseURI = "https://raw.githubusercontent.com/akn9050/azurestack/$branch/deployment/powershell"
                     $scriptDownloadPath = "$scriptPath\$script"
                     DownloadWithRetry -downloadURI "$scriptBaseURI/$script" -downloadLocation $scriptDownloadPath -retries 10
                 }
